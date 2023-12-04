@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMsg</title>
+    <script defer src="http://localhost:8001/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav">
+                <img class="logo" src="images/Messaging-bro.svg" alt="logo">
+                <h3>iMsg</h3>
+                <div class="nav-vc">
+                    <img class="vc" src="images/Video call-bro.svg" alt="vc">
+                </div>
+                <div class="nav-call">
+                    <img class="vc" src="images/Feed-bro.svg" alt="call">
+                </div>
+                <div class="nav-search">
+                    <img class="vc" src="images/Binary code-bro.svg" alt="search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="msg1"></div>
+        <div class="msg">
+            <!-- <div class="message right"></div>
+            <div class="message left"></div> -->
+        </div>
+        <div class="msg2"></div>
+
+        <div class="send">
+            <form action="#" id="send-container">
+                <i class="fa-solid fa-plus"></i>
+                <input type="text" id="send-msg" placeholder="Type your message" autocomplete="off">
+                <button class="send-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
